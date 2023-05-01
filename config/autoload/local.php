@@ -8,7 +8,7 @@
 
 return array(
     'db' => array(
-        'database' => 'testdb',
+        'database' => 'payment',
         'username' => 'root',
         'password' => '000',
 
