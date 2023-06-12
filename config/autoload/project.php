@@ -12,9 +12,9 @@ return array(
     // if you don't point to your public dir directly as described in the install doc of the original project you have to point here to $instance."/public" 
     'basepath' => $instance."/public",
     // origin url of your server - http://yourip - if  you don't have a proxy, baseurl and proxyurl should be the same like https://tennis-rudolstadt.de
-    'baseurl' => '',
+    'baseurl' => 'http://localhost:81',
     // the proxy url - i.e. https://tennis-rudolstadt.de
-    'proxyurl' => '',
+    'proxyurl' => 'http://localhost:81',
     'cookie_config' => array(
         'cookie_name_prefix' => $instance,
     ),
@@ -45,12 +45,12 @@ return array(
     // enable/disable stripe payment methods (possible values: card, sepa_debit, ideal, giropay, sofort)
     'stripePaymentMethods' => array(
         'card',
-        'sepa_debit'
+    //    'sepa_debit'
     ),
     // enable/disable stripe PaymentRequest (pmr) API for apple / google pay  
     'stripePaymentRequest' => 'false',
     // select the suitable icon for the selected stripe payment methods from imgs-client/layout/stripe_icons  
-    'stripeIcon' => 'card_sepa.png',
+    'stripeIcon' => 'card_ideal_sepa.png',
     // select a default method 
     'stripeDefaultPaymentMethod' => 'card',
     // some payment methods require a confirmation process - select if you want to automate the click on 'authorize' and 'confirm' button
